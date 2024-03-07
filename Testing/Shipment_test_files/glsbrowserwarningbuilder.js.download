@@ -1,0 +1,191 @@
+﻿var cookieName = "fade_out_browser";
+var cookieLifeDay = "10 * 365";  // for 10 years
+var alertFrameDivID = "fade_out_browser_div";
+var alertFrameButtonID = "fade_out_browser_button";
+var alertContent = "For the best browsing experience, please use the latest version of Google Chrome/Mozilla Firefox/Microsoft Edge to visit our website";
+var htmlElementBelowAlertBarID;
+var fadeOutBrowserList;
+var alertFrameDivCSSClass = "navbar-fixed-top";
+var alertButtonFrameDivCSSClass = "closeCookie";
+var alertButtonContent = "CLOSE";
+
+var cookie;
+var alertFrameElement;
+var htmlElementBelowAlertBar = [];
+
+var GLSBrowserWarningBuilder  = {
+    Display: function (mHtmlElementBelowAlertBarID, mFadeOutBrowserList, mAlertContent, mAlertFrameDivCSSClass, mAlertButtonFrameDivCSSClass) {
+        if (mFadeOutBrowserList) {
+            fadeOutBrowserList = mFadeOutBrowserList;
+        } else {
+            fadeOutBrowserList = "MSIE 7;MSIE 8;MSIE 9;MSIE 10;TRIDENT/";
+        }
+
+        if (mAlertContent) {
+            alertContent = mAlertContent;
+        }
+
+        if (mHtmlElementBelowAlertBarID) {
+            htmlElementBelowAlertBarID = mHtmlElementBelowAlertBarID;
+            var htmlElementBelowAlertBarIDArr = htmlElementBelowAlertBarID.split(";");
+            for (var i = 0; i < htmlElementBelowAlertBarIDArr.length; i++) {
+                htmlElementBelowAlertBar[i] = document.getElementById(htmlElementBelowAlertBarIDArr[i]);
+            }
+        }
+
+        if (mAlertFrameDivCSSClass) {
+            alertFrameDivCSSClass = mAlertFrameDivCSSClass;
+        }
+
+        if (mAlertButtonFrameDivCSSClass) {
+            alertButtonFrameDivCSSClass = mAlertButtonFrameDivCSSClass;
+        }
+
+        GLSBrowserWarningBuilder.BuildFallOutBrowserElement();
+
+        document.documentElement.className = 'js'; 
+        cookie = GLSBrowserWarningBuilder.GetCookie(cookieName);
+        alertFrameElement = document.getElementById(alertFrameDivID);
+       
+
+        GLSBrowserWarningBuilder.ShowAlertDialog(fadeOutBrowserList, alertFrameElement);
+    },
+    DisplayAdvanced : function (mCookieName, mCookieLifeDay , mAlertFrameDivID, mAlertFrameButtonID, mAlertContent,
+        mHtmlElementBelowAlertBarID, mFadeOutBrowserList, mAlertFrameDivCSSClass, mAlertButtonFrameDivCSSClass, mAlertButtonContent) {
+        if (mCookieName) {
+            cookieName = mCookieName;
+        }
+
+        if (cookieLifeDay) {
+            cookieLifeDay = mCookieLifeDay;
+        }
+
+        if (mAlertFrameDivID) {
+            alertFrameDivID = mAlertFrameDivID;
+        }
+
+        if (mAlertFrameButtonID) {
+            alertFrameButtonID = mAlertFrameButtonID;
+        }
+
+        if (mAlertContent) {
+            alertContent = mAlertContent;
+        }
+
+        if (mHtmlElementBelowAlertBarID) {
+            htmlElementBelowAlertBarID = mHtmlElementBelowAlertBarID;
+            var htmlElementBelowAlertBarIDArr = htmlElementBelowAlertBarID.split(";");
+            for (var i = 0; i < htmlElementBelowAlertBarIDArr.length; i++) {
+                htmlElementBelowAlertBar[i] = document.getElementById(htmlElementBelowAlertBarIDArr[i]);
+            }
+        }
+
+        if (mFadeOutBrowserList) {
+            fadeoutBrowserList = mFadeOutBrowserList;
+        }
+
+        if (mAlertFrameDivCSSClass) {
+            alertFrameDivCSSClass = mAlertFrameDivCSSClass
+        }
+
+        if (mAlertButtonFrameDivCSSClass) {
+            alertButtonFrameDivCSSClass = mAlertButtonFrameDivCSSClass;
+        }
+
+        if (mmAlertButtonContent) {
+            alertButtonContent = mAlertButtonContent;
+        }
+
+        if (fadeOutBrowserList) {
+            GLSBrowserWarningBuilder.BuildFallOutBrowserElement();
+        }
+
+        document.documentElement.className = 'js'; // adds .js class to <html> tag
+        cookie = GLSBrowserWarningBuilder.GetCookie(cookieName);
+        alertFrameElement = document.getElementById(alertFrameDivID);
+
+
+        GLSBrowserWarningBuilder.ShowAlertDialog(fadeOutBrowserList, alertFrameElement);
+    },
+
+    BuildFallOutBrowserElement : function () {
+        var masterTagDiv = document.createElement("div");
+        masterTagDiv.id = alertFrameDivID;
+        masterTagDiv.className = alertFrameDivCSSClass;
+        masterTagDiv.setAttribute("role", "alert");
+        masterTagDiv.style.display = "none";
+        var masterContent = document.createTextNode(alertContent);
+        masterTagDiv.appendChild(masterContent);
+
+        var childTagDiv = document.createElement("div");
+        childTagDiv.className = alertButtonFrameDivCSSClass;
+        var childTagAHref = document.createElement("a");
+        childTagAHref.id = alertButtonFrameDivCSSClass;
+        childTagAHref.href = "javascript:GLSBrowserWarningBuilder.SetCookie('" + cookieName + "','dismiss', " + cookieLifeDay + ", document.getElementById('" + alertFrameDivID + "')) ";
+        childTagAHref.title = alertButtonContent;
+        var childTagAHrefContent = document.createTextNode(alertButtonContent);
+        childTagAHref.appendChild(childTagAHrefContent);
+
+        childTagDiv.appendChild(childTagAHref);
+
+        masterTagDiv.appendChild(childTagDiv);
+        document.body.appendChild(masterTagDiv);
+    },
+    ShowAlertDialog : function (fadeOutBrowserList, alertFrameElement) {
+        if (fadeOutBrowserList) {
+            var browser_arr = fadeOutBrowserList.split(";");
+            for (var i = 0; i < browser_arr.length; i++) {
+                if ((navigator.userAgent.toUpperCase().indexOf(browser_arr[i]) != -1) && !GLSBrowserWarningBuilder.CheckCookie()) {
+                    alertFrameElement.style.display = "table";
+                    if (htmlElementBelowAlertBarID) {
+                        for (var j = 0; j < htmlElementBelowAlertBar.length; j++) {
+                            if (htmlElementBelowAlertBar[j] != null) {
+                                htmlElementBelowAlertBar[j].style.top = alertFrameElement.offsetHeight + 'px';
+                                htmlElementBelowAlertBar[j].style.position = "relative";
+                            }
+                        }
+                    }
+                    break;
+                }
+            }
+        } 
+    },
+    CheckCookie :function() {
+        if (cookie == 'dismiss') {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    SetCookie: function (name, value, days, mAlertFrameElement) {
+        if (htmlElementBelowAlertBarID) {
+            for (var j = 0; j < htmlElementBelowAlertBar.length; j++) {
+                if (htmlElementBelowAlertBar[j] != null){
+                    htmlElementBelowAlertBar[j].style.cssText = "";
+                }
+            }
+        }
+
+        if (mAlertFrameElement) {
+            mAlertFrameElement.style.display = 'none';
+        }
+
+
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    },
+    GetCookie : function (name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+    }
+}

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://uat-ezyfreight.ezbiz.com/ez4/en/shipment/details/1563348 -->
+<html lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://uat-ezyfreight.ezbiz.com/ez4/favicon_n.ico"><meta name="msapplication-TileColor" content="#ffffff"><meta name="theme-color" content="#ffffff"><title>EzyFreight™ - Shipment</title><link href="./EzyFreight_Shipment_files/materialdesignicons.min.css" rel="stylesheet"><link href="./EzyFreight_Shipment_files/vuetify.min.css" rel="stylesheet"><link rel="stylesheet" href="./EzyFreight_Shipment_files/kendo-theme-all.css"><link rel="stylesheet" href="./EzyFreight_Shipment_files/glsbrowserwarningbuilder.css"><script src="./EzyFreight_Shipment_files/polyfill.min.js.download"></script><style type="text/css" id="operaUserStyle"></style><script src="./EzyFreight_Shipment_files/fetch.umd.min.js.download"></script><script src="./EzyFreight_Shipment_files/lodash.min.js.download"></script><script src="./EzyFreight_Shipment_files/vue.min.js.download"></script><script src="./EzyFreight_Shipment_files/vuetify.min.js.download"></script><script src="./EzyFreight_Shipment_files/vue-router.min.js.download"></script><script src="./EzyFreight_Shipment_files/vuex.min.js.download"></script><script src="./EzyFreight_Shipment_files/moment.min.js.download"></script><script src="./EzyFreight_Shipment_files/glsbrowserwarningbuilder.js.download"></script><script src="./EzyFreight_Shipment_files/xregexp-all.min.js.download"></script><link href="./EzyFreight_Shipment_files/app.9af942e8.css" rel="preload" as="style"><link href="./EzyFreight_Shipment_files/app.ebe15cd28fc947e7511e.js.download" rel="preload" as="script"><link href="./EzyFreight_Shipment_files/chunk-vendors.ebe15cd28fc947e7511e.js.download" rel="preload" as="script"><link href="./EzyFreight_Shipment_files/app.9af942e8.css" rel="stylesheet"><script type="text/javascript" async="" src="./EzyFreight_Shipment_files/js"></script><style type="text/css" id="vuetify-theme-stylesheet">.v-application a { color: #1976d2; }
+.v-application .primary {
+  background-color: #1976d2 !important;
+  border-color: #1976d2 !important;
+}
+.v-application .primary--text {
+  color: #1976d2 !important;
+  caret-color: #1976d2 !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: #c7fdff !important;
+  border-color: #c7fdff !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: #c7fdff !important;
+  caret-color: #c7fdff !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: #a8e0ff !important;
+  border-color: #a8e0ff !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: #a8e0ff !important;
+  caret-color: #a8e0ff !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: #8ac5ff !important;
+  border-color: #8ac5ff !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: #8ac5ff !important;
+  caret-color: #8ac5ff !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: #6aaaff !important;
+  border-color: #6aaaff !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: #6aaaff !important;
+  caret-color: #6aaaff !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: #488fef !important;
+  border-color: #488fef !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: #488fef !important;
+  caret-color: #488fef !important;
+}
+.v-application .primary.darken-1 {
+  background-color: #005eb6 !important;
+  border-color: #005eb6 !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: #005eb6 !important;
+  caret-color: #005eb6 !important;
+}
+.v-application .primary.darken-2 {
+  background-color: #00479b !important;
+  border-color: #00479b !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: #00479b !important;
+  caret-color: #00479b !important;
+}
+.v-application .primary.darken-3 {
+  background-color: #003180 !important;
+  border-color: #003180 !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: #003180 !important;
+  caret-color: #003180 !important;
+}
+.v-application .primary.darken-4 {
+  background-color: #001e67 !important;
+  border-color: #001e67 !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: #001e67 !important;
+  caret-color: #001e67 !important;
+}
+.v-application .secondary {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+.v-application .secondary--text {
+  color: #424242 !important;
+  caret-color: #424242 !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: #c1c1c1 !important;
+  border-color: #c1c1c1 !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: #c1c1c1 !important;
+  caret-color: #c1c1c1 !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: #a6a6a6 !important;
+  border-color: #a6a6a6 !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: #a6a6a6 !important;
+  caret-color: #a6a6a6 !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: #8b8b8b !important;
+  border-color: #8b8b8b !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: #8b8b8b !important;
+  caret-color: #8b8b8b !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: #727272 !important;
+  border-color: #727272 !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: #727272 !important;
+  caret-color: #727272 !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: #595959 !important;
+  border-color: #595959 !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: #595959 !important;
+  caret-color: #595959 !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: #2c2c2c !important;
+  border-color: #2c2c2c !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: #2c2c2c !important;
+  caret-color: #2c2c2c !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: #171717 !important;
+  border-color: #171717 !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: #171717 !important;
+  caret-color: #171717 !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .accent {
+  background-color: #82b1ff !important;
+  border-color: #82b1ff !important;
+}
+.v-application .accent--text {
+  color: #82b1ff !important;
+  caret-color: #82b1ff !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: #f8ffff !important;
+  border-color: #f8ffff !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: #f8ffff !important;
+  caret-color: #f8ffff !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: #daffff !important;
+  border-color: #daffff !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: #daffff !important;
+  caret-color: #daffff !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: #bce8ff !important;
+  border-color: #bce8ff !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: #bce8ff !important;
+  caret-color: #bce8ff !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: #9fccff !important;
+  border-color: #9fccff !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: #9fccff !important;
+  caret-color: #9fccff !important;
+}
+.v-application .accent.darken-1 {
+  background-color: #6596e2 !important;
+  border-color: #6596e2 !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: #6596e2 !important;
+  caret-color: #6596e2 !important;
+}
+.v-application .accent.darken-2 {
+  background-color: #467dc6 !important;
+  border-color: #467dc6 !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: #467dc6 !important;
+  caret-color: #467dc6 !important;
+}
+.v-application .accent.darken-3 {
+  background-color: #2364aa !important;
+  border-color: #2364aa !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: #2364aa !important;
+  caret-color: #2364aa !important;
+}
+.v-application .accent.darken-4 {
+  background-color: #004c90 !important;
+  border-color: #004c90 !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: #004c90 !important;
+  caret-color: #004c90 !important;
+}
+.v-application .error {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.v-application .error--text {
+  color: #ff5252 !important;
+  caret-color: #ff5252 !important;
+}
+.v-application .error.lighten-5 {
+  background-color: #ffe4d5 !important;
+  border-color: #ffe4d5 !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: #ffe4d5 !important;
+  caret-color: #ffe4d5 !important;
+}
+.v-application .error.lighten-4 {
+  background-color: #ffc6b9 !important;
+  border-color: #ffc6b9 !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: #ffc6b9 !important;
+  caret-color: #ffc6b9 !important;
+}
+.v-application .error.lighten-3 {
+  background-color: #ffa99e !important;
+  border-color: #ffa99e !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: #ffa99e !important;
+  caret-color: #ffa99e !important;
+}
+.v-application .error.lighten-2 {
+  background-color: #ff8c84 !important;
+  border-color: #ff8c84 !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: #ff8c84 !important;
+  caret-color: #ff8c84 !important;
+}
+.v-application .error.lighten-1 {
+  background-color: #ff6f6a !important;
+  border-color: #ff6f6a !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: #ff6f6a !important;
+  caret-color: #ff6f6a !important;
+}
+.v-application .error.darken-1 {
+  background-color: #df323b !important;
+  border-color: #df323b !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: #df323b !important;
+  caret-color: #df323b !important;
+}
+.v-application .error.darken-2 {
+  background-color: #bf0025 !important;
+  border-color: #bf0025 !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: #bf0025 !important;
+  caret-color: #bf0025 !important;
+}
+.v-application .error.darken-3 {
+  background-color: #9f0010 !important;
+  border-color: #9f0010 !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: #9f0010 !important;
+  caret-color: #9f0010 !important;
+}
+.v-application .error.darken-4 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.v-application .info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.v-application .info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.v-application .info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.v-application .info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.v-application .info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.v-application .info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.v-application .info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.v-application .info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.v-application .info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.v-application .info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.v-application .info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.v-application .success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.v-application .success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.v-application .success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.v-application .success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.v-application .success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.v-application .success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.v-application .success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.v-application .success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.v-application .success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.v-application .warning {
+  background-color: #fb8c00 !important;
+  border-color: #fb8c00 !important;
+}
+.v-application .warning--text {
+  color: #fb8c00 !important;
+  caret-color: #fb8c00 !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: #ffff9e !important;
+  border-color: #ffff9e !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: #ffff9e !important;
+  caret-color: #ffff9e !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: #fffb82 !important;
+  border-color: #fffb82 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: #fffb82 !important;
+  caret-color: #fffb82 !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: #ffdf67 !important;
+  border-color: #ffdf67 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: #ffdf67 !important;
+  caret-color: #ffdf67 !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: #ffc24b !important;
+  border-color: #ffc24b !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: #ffc24b !important;
+  caret-color: #ffc24b !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: #ffa72d !important;
+  border-color: #ffa72d !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: #ffa72d !important;
+  caret-color: #ffa72d !important;
+}
+.v-application .warning.darken-1 {
+  background-color: #db7200 !important;
+  border-color: #db7200 !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: #db7200 !important;
+  caret-color: #db7200 !important;
+}
+.v-application .warning.darken-2 {
+  background-color: #bb5900 !important;
+  border-color: #bb5900 !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: #bb5900 !important;
+  caret-color: #bb5900 !important;
+}
+.v-application .warning.darken-3 {
+  background-color: #9d4000 !important;
+  border-color: #9d4000 !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: #9d4000 !important;
+  caret-color: #9d4000 !important;
+}
+.v-application .warning.darken-4 {
+  background-color: #802700 !important;
+  border-color: #802700 !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: #802700 !important;
+  caret-color: #802700 !important;
+}</style><link rel="stylesheet" type="text/css" href="./EzyFreight_Shipment_files/custom.4a017d9193c8f76edd29.css"><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="stylesheet" type="text/css" href="./EzyFreight_Shipment_files/header.4afd28fa91d8f98869d1.css"><link rel="stylesheet" type="text/css" href="./EzyFreight_Shipment_files/footer.5c7c9e385f2f09704190.css"></head><body><noscript><div class=navbar-fixed-top>We're sorry but EzyFreight doesn't work properly without JavaScript enabled. Please enable it to continue.</div></noscript><div id="app" data-app="true" class="app"><div class="hFrame"><div class="microfornt" id="EzyFreightHeader"><div id="header-app" data-app="true" class=""><div class="header header--sticky" id="headerEz4"><div title="11" class="header__logo"></div><div class="menu-wrapper"><div class="menu-wrapper__menu-icon menu-icon menu-icon--closed"><div class="menu-icon__menu-bar"></div><div class="menu-icon__menu-bar"></div><div class="menu-icon__menu-bar"></div></div><div class="menu-wrapper__menu menu"><div class="menu__content-wrapper menu-content"><div class="menu-content__item menu-content__item--padding"></div><div class="menu-content__group"><a href="https://uat-ezyfreight.ezbiz.com/ez4/en/shipment" class="menu-content__item router-link-active"> Document </a><a href="https://uat-ezyfreight.ezbiz.com/ez4/en/shipmentLog" class="menu-content__item"> User Log </a><a href="https://uat-ezyfreight.ezbiz.com/ez4/en/userManagement" class="menu-content__item"> User Management </a></div><div class="menu-content__group"><a href="https://uat-ezyfreight.ezbiz.com/ez4/en/changePassword" class="menu-content__item menu-content__item user"><div class="user__icon"></div><span class="user__text">ADMIN</span></a><div class="menu-content__item logout"> LOGOUT </div></div></div></div></div></div><div class="header header--visibility-hidden"><div title="11" class="header__logo"></div><!----></div><!----></div></div></div><div data-v-56883146="" class="body"><div data-v-32972dc4="" data-v-56883146="" class="microfornt"><div id="custom-app" data-app="true" class="app"><div data-v-6e238284="" data-v-728b25f9="" class="shipment-document-wrapper"><div data-v-4126afc8="" data-v-6e238284=""></div><div data-v-6e238284="" class="shipment-document-wrapper__shipment-info-wrapper shipment-info-wrapper"><div data-v-6e238284="" class="shipment-info-wrapper__awb">160-12425291</div><a data-v-6e238284="" href="https://uat-ezyfreight.ezbiz.com/ez4/en/shipment/details/1563348#" class="shipment-info-wrapper__btn">View Another Air Waybill</a></div><div data-v-e9d9eb28="" data-v-6e238284="" value="" class="shipment-document-wrapper__search-wrapper"><div data-v-e9d9eb28="" class="v-input theme--light v-text-field v-text-field--is-booted v-text-field--placeholder v-select v-select--chips v-select--is-multi v-autocomplete search-combo-box"><div class="v-input__control"><div role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-53" class="v-input__slot"><div class="v-select__slot"><div class="v-select__selections"><input id="input-53" placeholder="Search..." type="text" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--"><i role="button" class="v-icon notranslate v-icon--link material-icons theme--light"></i></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div></div><input type="hidden"></div><div class="v-menu"><div class="v-menu__content theme--light v-autocomplete__content" style="max-height: 304px; min-width: 0px; top: 12px; left: 0px; transform-origin: left top; z-index: 0; display: none;"></div></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div data-v-6e238284="" class="shipment-document-wrapper__list-information-wrapper shipment-document-list-information-wrapper"><span data-v-6e238284="" class="shipment-document-list-information-wrapper__total-count">A total of <strong>16 records</strong></span><div data-v-6e238284="" class="shipment-document-list-information-wrapper__order"><div data-v-6e238284="" class="shipment-document-list-information-wrapper__order-by"> Sort By <div data-v-0dd3c8fa="" data-v-6e238284="" class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-select" value="1"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-61" class="v-input__slot"><div class="v-select__slot"><div class="v-select__selections"><div class="v-select__selection v-select__selection--comma">Updated On</div><input id="input-61" readonly="readonly" type="text" aria-readonly="true" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div></div><input type="hidden" value="[object Object]"></div><div class="v-menu"><div class="v-menu__content theme--light " style="max-height: 304px; min-width: 0px; top: 12px; left: 0px; transform-origin: left top; z-index: 0; display: none;"></div></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div data-v-6e238284="" class="shipment-document-list-information-wrapper__order-method shipment-document-list-information-wrapper__order-method--asc"></div></div><div data-v-6e238284="" class="shipment-document-list-information-wrapper__download-btn-wrapper button-wrapper"><button data-v-4002a73c="" data-v-6e238284="" type="button" class="button shipment-document-list-information-wrapper__download-btn button--dim button--inline shipment-document-list-information-wrapper__download-btn--dimmed"> Download </button></div></div><table data-v-6e238284="" class="shipment-document-wrapper__document-item shipment-document-item"><thead data-v-6e238284="" class="shipment-document-item__header"><tr data-v-6e238284="" class="shipment-document-item__row"><th data-v-6e238284="" class="shipment-document-item__header-col shipment-document-item__checkbox"><div data-v-fec4971a="" data-v-6e238284="" class="v-input theme--light v-input--selection-controls v-input--checkbox"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><input aria-checked="false" id="check-all-document-checkbox" role="checkbox" type="checkbox" value="*"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></div><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></th><th data-v-6e238284="" class="shipment-document-item__header-col shipment-document-item__filename shipment-document-item__filename--header shipment-document-item__header-order-method"> File Name </th><th data-v-6e238284="" class="shipment-document-item__header-col shipment-document-item__remarks shipment-document-item__remarks--desktop"> Remarks </th><th data-v-6e238284="" class="shipment-document-item__header-col shipment-document-item__type shipment-document-item__header-order-method"> Type </th><th data-v-6e238284="" class="shipment-document-item__header-col shipment-document-item__update-on shipment-document-item__header-order-method shipment-document-item__header-order-method--asc"> Updated On </th><th data-v-6e238284="" class="shipment-document-item__header-col shipment-document-item__remarks shipment-document-item__remarks--mobile"> Remarks </th></tr></thead><tbody data-v-6e238284="" class="shipment-document-item__body"><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--tif"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--tif"><span data-v-6e238284="" class="shipment-document-item__filename--expired">awb.tif</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> awb remark </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-07-24 15:30</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis"><span data-v-6e238284="">awb remark</span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--jpg"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--jpg"><span data-v-6e238284="" class="shipment-document-item__filename--expired">letter1.jpeg</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> letter1 remark </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-07-24 17:30</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis"><span data-v-6e238284="">letter1 remark</span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--png"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--png"><span data-v-6e238284="" class="shipment-document-item__filename--expired">letter2.PNG</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> letter2 remark </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-13 17:40</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis"><span data-v-6e238284="">letter2 remark</span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><span data-v-6e238284="" class="shipment-document-item__filename--expired">牌照.pdf</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> license web remark </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-13 17:41</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis"><span data-v-6e238284="">license web remark</span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><span data-v-6e238284="" class="shipment-document-item__filename--expired">license.pdf</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> Dennis.Fung@glshk.com </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-13 17:42</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis"><span data-v-6e238284="">Dennis.Fung@glshk.com</span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><span data-v-6e238284="" class="shipment-document-item__filename--expired">牌照.pdf</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> license airline remark </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-13 17:44</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis"><span data-v-6e238284="">license airline remark</span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><div data-v-fec4971a="" data-v-6e238284="" class="v-input theme--light v-input--selection-controls v-input--checkbox"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><input aria-checked="false" id="15180416" role="checkbox" type="checkbox" value="15180416"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></div><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><a data-v-6e238284="" href="https://uat-ezyfreight.ezbiz.com/ezyfreight/usrapps/printdoc/ExportToPDF.aspx?aid=1&amp;cid=HKGCUSTOMS&amp;uid=ADMIN&amp;EncryptedSessionID=Uk1FQ0x%2BUUVCfn81QU95&amp;DocumentType=2&amp;ShipmentID=1563348&amp;ShipmentDocumentID=15180416" target="_blank">H8811231.pdf</a></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> - </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> House AWB (airline) </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-14 17:26</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis shipment-document-item__remarks--empty"><span data-v-6e238284=""></span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><div data-v-fec4971a="" data-v-6e238284="" class="v-input theme--light v-input--selection-controls v-input--checkbox"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><input aria-checked="false" id="0" role="checkbox" type="checkbox" value="0"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></div><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><a data-v-6e238284="" href="https://uat-ezyfreight.ezbiz.com/ezyfreight/usrapps/printdoc/ExportToPDF.aspx?aid=1&amp;cid=HKGCUSTOMS&amp;uid=ADMIN&amp;EncryptedSessionID=Uk1FQ0x%2BUUVCfn81QU95&amp;DocumentType=2&amp;ShipmentID=1563348" target="_blank">House Manifest.pdf</a></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> - </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> House Manifest </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-14 17:26</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis shipment-document-item__remarks--empty"><span data-v-6e238284=""></span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><div data-v-fec4971a="" data-v-6e238284="" class="v-input theme--light v-input--selection-controls v-input--checkbox"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><input aria-checked="false" id="15180417" role="checkbox" type="checkbox" value="15180417"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></div><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><a data-v-6e238284="" href="https://uat-ezyfreight.ezbiz.com/ezyfreight/usrapps/printdoc/ExportToPDF.aspx?aid=1&amp;cid=HKGCUSTOMS&amp;uid=ADMIN&amp;EncryptedSessionID=Uk1FQ0x%2BUUVCfn81QU95&amp;DocumentType=2&amp;ShipmentID=1563348&amp;ShipmentDocumentID=15180417" target="_blank">H881123.pdf</a></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> - </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> House AWB (airline) </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-14 17:26</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis shipment-document-item__remarks--empty"><span data-v-6e238284=""></span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><div data-v-fec4971a="" data-v-6e238284="" class="v-input theme--light v-input--selection-controls v-input--checkbox"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><input aria-checked="false" id="15172856" role="checkbox" type="checkbox" value="15172856"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></div><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><a data-v-6e238284="" href="https://uat-ezyfreight.ezbiz.com/ezyfreight/usrapps/printdoc/ExportToPDF.aspx?aid=1&amp;cid=HKGCUSTOMS&amp;uid=ADMIN&amp;EncryptedSessionID=Uk1FQ0x%2BUUVCfn81QU95&amp;DocumentType=1&amp;ShipmentID=1563348" target="_blank">Master AWB.pdf</a></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> - </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> AWB </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-14 17:26</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis shipment-document-item__remarks--empty"><span data-v-6e238284=""></span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><span data-v-6e238284="" class="shipment-document-item__filename--expired">TestDoc3.pdf</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> - </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-31 11:03</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis shipment-document-item__remarks--empty"><span data-v-6e238284=""></span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><span data-v-6e238284="" class="shipment-document-item__filename--expired">TestDoc3.pdf</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> - </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-31 11:11</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis shipment-document-item__remarks--empty"><span data-v-6e238284=""></span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><span data-v-6e238284="" class="shipment-document-item__filename--expired">TestDoc3.pdf</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> - </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-31 11:22</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis shipment-document-item__remarks--empty"><span data-v-6e238284=""></span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--pdf"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--pdf"><span data-v-6e238284="" class="shipment-document-item__filename--expired">TestDoc3.pdf</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> Hang.Tsui@glshk.com </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-31 11:27</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis"><span data-v-6e238284="">Hang.Tsui@glshk.com</span></td></tr><tr data-v-6e238284="" class="shipment-document-item__row shipment-document-item__body-row shipment-document-item__body-row--jpg"><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__checkbox"><!----></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__filename shipment-document-item__filename--body ellipsis shipment-document-item__filename--jpg"><span data-v-6e238284="" class="shipment-document-item__filename--expired">letter1.jpeg</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--desktop ellipsis"> - </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__type ellipsis"> Pouch </td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__update-on ellipsis"><span data-v-6e238284="">2023-08-31 20:44</span></td><td data-v-6e238284="" class="shipment-document-item__body-col shipment-document-item__remarks shipment-document-item__remarks--mobile ellipsis shipment-document-item__remarks--empty"><span data-v-6e238284=""></span></td></tr></tbody><tfoot data-v-6e238284="" class="shipment-document-item__footer" style="display: none;"><tr data-v-6e238284="" class="shipment-document-item__row"><td data-v-6e238284="" colspan="7">Loading...</td></tr></tfoot><tfoot data-v-6e238284="" class="shipment-document-item__footer" style="display: none;"><tr data-v-6e238284="" class="shipment-document-item__row"><td data-v-6e238284="" colspan="7">No results</td></tr></tfoot></table><div data-v-66c98477="" data-v-6e238284=""><div data-v-66c98477="" role="dialog" class="v-dialog__container"><div role="document" data-v-66c98477="" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog" style="display: none;"></div></div></div></div><div data-v-66c98477="" data-v-6e238284=""><div data-v-66c98477="" role="dialog" class="v-dialog__container"><div role="document" data-v-66c98477="" class="v-dialog__content" style="z-index: 0;"><div class="v-dialog" style="display: none;"></div></div></div></div></div></div></div></div><div><div class="microfornt" id="EzyFreightFooter"><div id="footer-app" data-app="true" class=""><div class="accept-cookies-warning-wrapper accept-cookies-warning-banner"><div>We use cookies on our website. By continuing to use our website you are agreeing to our cookie usage.<br>For more information on how we use cookies, please see our <a href="https://uat-ezyfreight.ezbiz.com/ez4/en/cookiesPolicy" target="_blank"><b class="cookieURL">cookies policy</b></a>.</div><div><button data-v-4002a73c="" type="button" class="button accept-cookies-warning-wrapper__accept-button button--inline"> Continue </button></div></div><!----><!----></div></div></div></div><script>var isIE = function () {
+        var ua = navigator.userAgent.toLowerCase();
+        var msie = ua.indexOf('msie ');
+        if (msie > 0) {
+            // IE 10 or older => return version number
+            return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+        }
+        var trident = ua.indexOf('trident/');
+        if (trident > 0) {
+            // IE 11 => return version number
+            var rv = ua.indexOf('rv:');
+            return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+        }
+        // other browser
+        return false;
+      };
+      var ie = isIE();
+      if (ie){ //20230111 IE out of support
+          window.location.href = "/UnsupportedBrowser.html";
+      }
+      // if (ie){
+      //     try{
+      //       var root = document.getElementsByTagName('html')[0];
+      //       root.classList.add('k-ie');
+      //     }catch(e){
+      //       console.log(e);
+      //     }
+      // }
+      // if (ie && ie <= 9) {
+      //   document.body.innerHTML = '<div class="navbar-fixed-top">Your browser is out of date. Please update your browser to the latest version.</div>'
+      // }else if (ie && ie == 10){
+      //   if (GLSBrowserWarningBuilder)
+      //     GLSBrowserWarningBuilder.Display("app","MSIE 7;MSIE 8; MSIE 9; MSIE 10; TRIDENT/");
+      // }</script><script src="./EzyFreight_Shipment_files/chunk-vendors.ebe15cd28fc947e7511e.js.download"></script><script src="./EzyFreight_Shipment_files/app.ebe15cd28fc947e7511e.js.download"></script><script type="text/javascript" src="./EzyFreight_Shipment_files/custom.4a017d9193c8f76edd29.umd.min.js.download" crossorigin="true" id="custom-scripts"></script><script type="text/javascript" src="./EzyFreight_Shipment_files/header.4afd28fa91d8f98869d1.umd.min.js.download" crossorigin="true" id="header-scripts"></script><script type="text/javascript" src="./EzyFreight_Shipment_files/footer.5c7c9e385f2f09704190.umd.min.js.download" crossorigin="true" id="footer-scripts"></script><div id="fade_out_browser_div" class="navbar-fixed-top" role="alert" style="display: none;">For the best browsing experience, please use the latest version of Google Chrome/Mozilla Firefox/Microsoft Edge to visit our website<div class="closeCookie"><a id="closeCookie" href="javascript:GLSBrowserWarningBuilder.SetCookie(&#39;fade_out_browser&#39;,&#39;dismiss&#39;, 10 * 365, document.getElementById(&#39;fade_out_browser_div&#39;)) " title="CLOSE">CLOSE</a></div></div></body></html>
